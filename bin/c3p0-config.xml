@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+    	<property name="driverClass">com.mysql.jdbc.Driver</property>
+    	<property name="jdbcUrl">jdbc:mysql://localhost:3306/student?useSSL=false</property>
+		<property name="user">root</property>
+		<property name="password">zjtzjy137381</property>
+		<property name="initialPoolSize">40</property>		
+		<property name="minPoolSize">10</property>
+		<property name="maxPoolSize">60</property>
+		<property name="maxStatements">100</property>
+		<property name="maxIdleTime">60</property>
+	</default-config>
+	<named-config name="mysql">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+    	<property name="jdbcUrl">jdbc:mysql://localhost:3306/student</property>
+		<property name="user">root</property>
+		<property name="password">zjtzjy137381</property>
+		<property name="initialPoolSize">40</property>		
+		<property name="minPoolSize">10</property>
+		<property name="maxPoolSize">60</property>
+		<property name="maxStatements">100</property>
+		<property name="maxIdleTime">60</property>
+	</named-config>
+	
+	<named-config name="oracle">
+		<property name="driverClass">oracle.jdbc.OracleDriver</property>
+    	<property name="jdbcUrl">jdbc:oracle:thin:@//localhost:1521:SERVICENAME</property>
+		<property name="user">root</property>
+		<property name="password">zjtzjy137381</property>
+		<property name="initialPoolSize">40</property>		
+		<property name="minPoolSize">10</property>
+		<property name="maxPoolSize">60</property>
+		<property name="maxStatements">100</property>
+		<property name="maxIdleTime">60</property>
+	</named-config>
+	<named-config name="sqlserver">
+		<property name="driverClass">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    	<property name="jdbcUrl">jdbc:sqlserver://localhost:1433;DatabaseName=yun4jbookSY1</property>
+		<property name="user">root</property>
+		<property name="password">zjtzjy137381</property>
+		<property name="initialPoolSize">40</property>		
+		<property name="minPoolSize">10</property>
+		<property name="maxPoolSize">60</property>
+		<property name="maxStatements">100</property>
+		<property name="maxIdleTime">60</property>
+	</named-config>
+	
+	
+	</c3p0-config>
